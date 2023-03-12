@@ -12,6 +12,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Login</title>
+
+    <style>
+        body {
+            background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(https://cdn1.bookmanager.com/i/9903208/IMG_6154___Edited__1_.png);
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,19 +40,24 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                             <form class="">
-                                <div class="form-floating mb-3">
+                                <div style="display: flex; justify-content: center;">
+                                <div class="form-floating mb-3" style="width: 400px;">
                                     <input type="email" class="form-control rounded-3" id="floatingInput"
                                         placeholder="name@example.com">
                                     <label for="floatingInput">Email address</label>
                                 </div>
-                                <div class="form-floating mb-3">
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                <div class="form-floating mb-3 "style="width: 400px;">
                                     <input type="password" class="form-control rounded-3" id="floatingPassword"
                                         placeholder="Password">
                                     <label for="floatingPassword">Password</label>
                                 </div>
-                                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary mx-auto" type="submit">Login</button>
-
-                                <hr class="my-4">
+                            </div>
+                                <div style="display: flex; justify-content: center;">
+                                <button class="w-50 mb-2 btn btn-lg rounded-3 btn-primary mx-auto" type="submit">Login</button>
+                                </div>
+                                 <hr class="my-4">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
                                 </div>
@@ -66,18 +78,37 @@
                         <!--Register-->
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                             <form class="">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control rounded-3" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
+                                <div style="display: flex; justify-content: center;">
+                                    <div class="form-floating mb-3" style="width: 400px;">
+                                        <input type="email" class="form-control rounded-3" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Name-LastName</label>
+                                    </div>
+                                    </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <div class="form-floating mb-3" style="width: 400px;">
+                                        <input type="email" class="form-control rounded-3" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">UserName</label>
+                                    </div>
+                                    </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <div class="form-floating mb-3" style="width: 400px;">
+                                        <input type="email" class="form-control rounded-3" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                    <div class="form-floating mb-3 "style="width: 400px;">
+                                        <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control rounded-3" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword">Password</label>
-                                </div>
-                                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign
-                                    up</button>
+                                    <div style="display: flex; justify-content: center;">
+                                    <button class="w-50 mb-2 btn btn-lg rounded-3 btn-primary mx-auto" type="submit">Sing up</button>
+                                    </div>
                                 <hr class="my-4">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
