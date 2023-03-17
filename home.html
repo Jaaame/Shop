@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Henny+Penny&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="home.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home</title>
+  <style>
+    .text-stroke {
+      -webkit-text-stroke: 3.9px #fff;
+      text-stroke: 1px #fff;
+    }
+
+    .sidebar {
+      height: 100%;
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow p-3 fixed-top " style="background-color: #CFC0A6;">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col">
+          <a href="home.html" class="nav-link">
+            <h1 class="text-stroke mt-2" style="font-family: Grandstander; font-size: 50pt;">Book! Store</h1>
+          </a>
+          <!-- Add any additional content here, such as a caption or description -->
+        </div>
+        <div class="col align-items-center ms-5 ps-5">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
+              <div class="col-md-4">
+                <li class="nav-item mt-3">
+                  <a href="categorybooks.html" style="color: black;"><i class="fa-solid fa-cart-shopping"
+                      style="font-size: 50px;"></i></a>
+                  <a class="nav-link fw-bold" style="font-size: 20px;" href="categorybooks.html">หมวดหมู่สินค้า</a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <li class="nav-item ms-4 mt-3">
+                  <a href="basket.html" style="color: black;"><i class="fa-sharp fa-solid fa-basket-shopping"
+                      style="font-size: 50px;"></i></a>
+                  <a class="nav-link fw-bold" style="font-size: 20px;" href="basket.html">ตะกร้าสินค้า</a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <li class="nav-item  ms-4 mt-3">
+                  <a href="history.html" style="color: black;"><i class="fa-sharp fa-solid fa-clock-rotate-left"
+                      style="font-size: 50px;"></i></a>
+                  <a class="nav-link fw-bold" style="font-size: 20px;" href="history.html">ประวัติการสั่งซื้อ</a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <li class="nav-item  ms-4 mt-3">
+                  <a href="index.html" style="color: black;"><i class="fa-sharp fa-solid fa-right-to-bracket"
+                      style="font-size: 50px;"></i></a>
+                  <a class="nav-link fw-bold" style="font-size: 20px;" href="index.html">เข้าสู่ระบบ</a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <li class="nav-item  ms-3 mt-3">
+                  <a href="contact.html" style="color: black;"><i class="fa-solid fa-address-card"
+                      style="font-size: 50px;"></i></a>
+                  <a class="nav-link fw-bold" style="font-size: 20px;" href="contact.html">ติดต่อเรา</a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex mt-3">
+                  <img id="language-image" src="imge/english.png" width="60px">
+                  <select id="language-selector" onchange="changeLanguageImage()"
+                    class="form-select ms-2 h-25 mt-2 pt-2">
+                    <option value="english">English</option>
+                    <option value="thai">Thai</option>
+                  </select>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <div class="container-fluid mt-4 pt-4">
+    <div class="row mt-5 pt-5 ">
+      <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4 ">
+        <h1 class=" mt-3" style="font-family: Itim;" id="item1">รายการหนังสือแนะนำ</h1>
+        <div class="row mt-5 ">
+          <div class="col-md-3">
+            <a href=""><img src="imge/book1.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">A Little History <br>of Literature</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">375 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book2.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">ต้นส้มแสนรัก</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">128 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book3.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">พิศวง จิตวิญญาณ</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">100 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/hbook1.jfif" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">เกิดใหม่เป็นหนังสือ<br>เวทย์มนต์</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">189 บาท</p>
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-md-3">
+            <a href=""><img src="imge/book4.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">เพราะเป็นวัยรุ่น<br>จึงเจ็บปวด</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">290 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/hbook6.jfif" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">Your name <br>เธอคือ...</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">169 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book6.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">ล้มแล้วไง ไปต่อ </p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">270 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/hbook2.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">Fetal Echo</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">129 บาท</p>
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-md-3">
+            <a href=""><img src="imge/book7.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">ไดโนเสาร์ พันธุ์ไทย</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">180 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book8.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-3">กลอนแปด เพลงยาว <br>ชีวิต สุนทรภู่</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">180 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book9.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">อพยพสัตว์ป่า<br> ไม่มีพรุ่งนี้สำหรับ<br>ลมหายใจ
+            </p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">180 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/hbook3.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">บ้านนี้มีหมอเทวดา 1</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">219 บาท</p>
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-md-3">
+            <a href=""><img src="imge/book10.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-2">เกียร์สีขาวกับกาวณ์สีฝุ่น</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">219 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book11.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">You're always <br>in my heart</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">259 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book12.jpeg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-4">ทะลุมิติ มาเปิด<br>ร้านอาหารต่างโลก </p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">229 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/hbook4.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">วายศึกษา</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">159 บาท</p>
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-md-3">
+            <a href=""><img src="imge/book13.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-3">ล่าขุมทรัพย์สุดขอบฟ้า<br>ในลอนดอน</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">169 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book14.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">โคนัน เล่ม 1</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">129 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/book15.jpg" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">โดเรมอน เล่ม 0 </p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">120 บาท</p>
+          </div>
+          <div class="col-md-3">
+            <a href=""><img src="imge/hbook5.png" alt="" width="200px"></a>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5">จินนี่หมัดเหล็ก</p>
+            <p style="font-family: Itim; font-size: 16pt;" class="ms-5 ps-2">120 บาท</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+
+    </script>
+  <script>
+    function changeLanguageImage() {
+      // Get the selected language value from the dropdown
+      const language = document.getElementById("language-selector").value;
+
+      // Set the image source based on the selected language
+      const image = document.getElementById("language-image");
+      if (language === "english") {
+        image.src = "imge/english.png";
+      } else if (language === "thai") {
+        image.src = "imge/thai.png";
+      }
+    }
+  </script>
+</body>
+
+</html>
