@@ -59,7 +59,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col">
-                    <a href="home.html" class="nav-link">
+                    <a href="homeen.html" class="nav-link">
                         <h1 class="text-stroke mt-2" style="font-family: Grandstander; font-size: 50pt;">Book! Store
                         </h1>
                     </a>
@@ -70,54 +70,54 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
                             <div class="col-md-4">
                                 <li class="nav-item mt-3">
-                                    <a href="categorybooks.html" style="color: black;"><i
+                                    <a href="categorybooksen.html" style="color: black;"><i
                                             class="fa-solid fa-cart-shopping" style="font-size: 50px;"></i></a>
                                     <a class="nav-link fw-bold" style="font-size: 20px;"
-                                        href="categorybooks.html">หมวดหมู่สินค้า</a>
+                                        href="categorybooksen.html">product category</a>
                                 </li>
                             </div>
                             <div class="col-md-4">
                                 <li class="nav-item ms-4 mt-3">
-                                    <a href="basket.html" style="color: black;"><i
+                                    <a href="basketen.html" style="color: black;"><i
                                             class="fa-sharp fa-solid fa-basket-shopping"
                                             style="font-size: 50px;"></i></a>
                                     <a class="nav-link fw-bold" style="font-size: 20px;"
-                                        href="basket.html">ตะกร้าสินค้า</a>
+                                        href="basketen.html">shopping cart</a>
                                 </li>
                             </div>
                             <div class="col-md-4">
                                 <li class="nav-item  ms-4 mt-3">
-                                    <a href="history.html" style="color: black;"><i
+                                    <a href="historyen.html" style="color: black;"><i
                                             class="fa-sharp fa-solid fa-clock-rotate-left"
                                             style="font-size: 50px;"></i></a>
                                     <a class="nav-link fw-bold" style="font-size: 20px;"
-                                        href="history.html">ประวัติการสั่งซื้อ</a>
+                                        href="historyen.html">Order History</a>
                                 </li>
                             </div>
                             <div class="col-md-4">
                                 <li class="nav-item  ms-4 mt-3">
-                                    <a href="index.html" style="color: black;"><i
+                                    <a href="indexen.html" style="color: black;"><i
                                             class="fa-sharp fa-solid fa-right-to-bracket"
                                             style="font-size: 50px;"></i></a>
                                     <a class="nav-link fw-bold" style="font-size: 20px;"
-                                        href="index.html">เข้าสู่ระบบ</a>
+                                        href="indexen.html">Login</a>
                                 </li>
                             </div>
                             <div class="col-md-4">
                                 <li class="nav-item  ms-3 mt-3">
-                                    <a href="contact.html" style="color: black;"><i class="fa-solid fa-address-card"
+                                    <a href="contacten.html" style="color: black;"><i class="fa-solid fa-address-card"
                                             style="font-size: 50px;"></i></a>
                                     <a class="nav-link fw-bold" style="font-size: 20px;"
-                                        href="contact.html">ติดต่อเรา</a>
+                                        href="contacten.html">contact us</a>
                                 </li>
                             </div>
                             <div class="col-md-4">
                                 <div class="d-flex mt-3">
-                                    <img id="language-image" src="imge/thai.png" width="60px">
+                                    <img id="language-image" src="imge/english.png" width="60px">
                                     <select id="language-selector" onchange="changeLanguageImage()"
                                         class="form-select ms-2 h-25 mt-2 pt-2">
-                                        <option value="thai">Thai</option>
                                         <option value="english">English</option>
+                                        <option value="thai">Thai</option>
                                     </select>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
         <div class="row mt-5 pt-5 ms-5 ps-5">
             <div class="col-md-4 mt-5 pt-5 ms-5 text-center">
                 <p class="text-stroke2" style="font-size: 80px; font-family: Itim; color: rgba(223, 223, 16, 0.808);">
-                    ติดต่อเรา</p>
+                    contact us</p>
                 <p class="text-stroke2" style="font-size: 80px; font-family: Itim; color: rgba(223, 223, 16, 0.808);">
                     Book! Store</p>
                 <img src="imge/booknow.png" alt="">
@@ -155,20 +155,20 @@
     </script>
         
     <script>
-        function changeLanguageImage() {
-            // Get the selected language value from the dropdown
-            const language = document.getElementById("language-selector").value;
+    function changeLanguageImage() {
+      // Get the selected language value from the dropdown
+      const language = document.getElementById("language-selector").value;
 
-            // Set the image source based on the selected language
-            const image = document.getElementById("language-image");
-            if (language === "english") {
-                image.src = "imge/english.png";
-                window.location.href ="contacten.html";
-            } else if (language === "thai") {
-                image.src = "imge/thai.png";
-                window.location.href ="contact.html";
-            }
-        }
+      // Set the image source based on the selected language
+      const image = document.getElementById("language-image");
+      if (language === "english") {
+        image.src = "imge/english.png";
+        window.location.href = "contacten.html";
+      } else if (language === "thai") {
+        image.src = "imge/thai.png";
+        window.location.href ="contact.html";
+      }
+    }
     </script>
 </body>
 
